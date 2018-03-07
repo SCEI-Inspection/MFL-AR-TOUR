@@ -1,9 +1,9 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/Assets/AssetStoreTools*
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 /.vs/
@@ -32,3 +32,15 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+
+[merge]
+tool = unityyamlmerge
+
+[mergetool "unityyamlmerge"]
+trustExitCode = false
+keepTemporaries = true
+keepBackup = false
+path = C:/Program Files/Unity/Hub/Editor/2017.3.1f1/Editor/Data/Tools/UnityYAMLMerge.exe
+
+cmd = \"C:/Program Files/Unity/Hub/Editor/2017.3.1f1/Editor/Data/Tools/UnityYAMLMerge.exe\" merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
